@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 1em 2em 1em  2em;
+}
+
+ul {
+    list-style: none;
+}
+
+.labs {
+    text-align: center;
+}
+
+.labs form {
+    margin: 2em;
+}
+
+.labs button {
+    padding: 2em;
+    width: 40%;
+    border-style: none;
+}
+
+.labs button:hover {
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, .2);
+}
