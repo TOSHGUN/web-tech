@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab5</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>    
+    <script src="./temp.js"></script>
+    <script src="./date.js"></script>
 </head>
 <body>
    <div>
@@ -56,25 +57,28 @@
         </table>
    </div>
     
-       <button onclick="createTable()">перевести в C</button>
-
-       <table class="date">
+   <button onclick="createTable()">перевести в C</button>
+   <div>
+      <table id="date">
          <caption>ДАТЫ</caption>
          <tr>
-           <td><strong>Исходная ДД.ММ.ГГ</strong></td>
-          <td>05.07.14</td>
-          <td>02.12.10</td>
-          <td>21.04.08</td>
-          <td>11.10.09</td>
-          <td>06.06.16</td>
-           <td>05.06.16</td>
-           <td>22.11.01</td>
-           <td>14.01.11</td>
-           <td>20.12.11</td>
-           <td>01.03.10</td>
-           <td>26.09.15</td>
-           <td>17.02.06</td>
+            <td><strong>Исходная ДД.ММ.ГГ</strong></td>
+            <td>05.07.14</td>
+            <td>02.12.10</td>
+            <td>21.04.08</td>
+            <td>11.10.09</td>
+            <td>06.06.16</td>
+            <td>05.06.16</td>
+            <td>22.11.01</td>
+            <td>14.01.11</td>
+            <td>20.12.11</td>
+            <td>01.03.10</td>
+            <td>26.09.15</td>
+            <td>17.02.06</td>
          </tr>
-        </table> 
+      </table> 
+      
+   </div>
+   <button onclick="button_date()">Обработать</button>
 </body>
 </html>
