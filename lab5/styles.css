@@ -1,0 +1,19 @@
+div {
+    display: flex;
+}
+table { 
+    border: 2px solid black; 
+    margin-right: 15px;
+}
+tr { 
+    border: 1px solid black; 
+}
+caption { 
+    color: green; 
+}
+td {
+    border: 1px solid black; text-align: center; vertical-align: middle;
+}
+button {
+    margin: 10px;
+}
