@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <input type="button" value="START" onclick="showCan()">
+    <canvas id="can" width="200" height="200"></canvas>
+    <div id="inputs" style="display: none;">
+        <p><label>X1: <input id="l1" value="0"></label></p>
+        <p><label>Y1: <input id="l3" value="0"></label></p>
+        <p><label>X2: <input id="l2" value="0"></label></p>
+        <p><label>Y2: <input id="l4" value="0"></label></p>
+        <p><label>X3: <input id="l5" value="0"></label></p>
+        <p><label>Y3: <input id="l6" value="" disabled></label></p>
+        <input type="button" value="CALCULATE" onclick="createPlane()">
+    </div>
+    
+</body>
+</html>
