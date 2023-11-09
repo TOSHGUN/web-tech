@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lab6</title>
     <script src="./script.js"></script>
+    <script src="./diagr.js"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <input type="button" value="START" onclick="showCan()">
+    <input class="click" type="button" value="START" onclick="showCan()">
     <canvas id="can" width="200" height="200"></canvas>
     <div id="inputs" style="display: none;">
         <p><label>X1: <input id="l1" value="0"></label></p>
@@ -19,6 +20,47 @@
         <p><label>Y3: <input id="l6" value="" disabled></label></p>
         <input type="button" value="CALCULATE" onclick="createPlane()">
     </div>
-    
+    <div>
+        <table id="tl">
+           <caption>Средняя температура, Far</caption>
+           <tr>
+              <th>Город</th>
+              <th>Осень</th>
+              <th>Зима</th>
+              <th>Весна</th>
+              <th>Лето</th>
+           </tr>
+           <tr>
+               <td class="city">Москва</td>
+               <td>42.8</td>
+               <td>23.9</td>
+               <td>41.9</td>
+               <td>43.7</td>
+           </tr>
+           <tr>
+              <td class="city">Париж</td>
+              <td>56.3</td>
+              <td>40.1</td>
+              <td>52.7</td>
+              <td>66.2</td>
+           </tr>
+           <tr>
+              <td class="city">Дубай</td>
+              <td>82.4</td>
+              <td>66.2</td>
+              <td>80.6</td>
+              <td>92.3</td>   
+           </tr>
+           <tr>
+              <td class="city">Пекин</td>
+              <td>58.1</td>
+              <td>26.6</td>
+              <td>59</td>
+              <td>77.9</td>   
+           </tr>   
+          </table>
+     </div>
+     <input class="click" type="button" value="CREATE DIAGRAM" onclick="buttonDiag()">
+     <canvas id="diag" width="500" height="500"></canvas>
 </body>
 </html>
