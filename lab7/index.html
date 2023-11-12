@@ -8,9 +8,13 @@
     
 </head>
 <body>
-    <canvas id="game" width="800" height="600" style="display: none;"></canvas>
-    <input type="button" value="START" id="button-1" onclick="drawFrame();" style="display: none;">
-    <p id="fin" style="display: none;">Game over</p>
-    <script src="./script.js" onload="startGame()"></script>
+    <input type="button" value="OPEN GAME" id="button-0" onclick="startGame();">
+    <div>
+        <canvas id="game" width="800" height="600"></canvas>
+        <input type="button" value="START" id="button-1" onclick="drawFrame();">
+        <div id="fin" >Game over</div>
+    </div>
+
+    <script src="./script.js" ></script>
 </body>
 </html>

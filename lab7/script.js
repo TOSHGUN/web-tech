@@ -12,14 +12,14 @@ let x = 80;
 
 function addCir(){
 	if (squarePosition_x > 10 && x<90){
-		x = Math.floor(Math.random()*(275-205)+105);
+		x = Math.floor(Math.random()*(275-205)+205);
 		y = Math.floor(Math.random()*(475-115)+115);
 		let coor = [];
 		coor.push(x);
 		coor.push(y);
 		circles.push(coor);
 	}
-	if (squarePosition_x> 120 && x <190){
+	if (squarePosition_x> 120 && x <290){
 		x = Math.floor(Math.random()*(375-305)+305);
 		y = Math.floor(Math.random()*(475-115)+115);
 		let coor = [];
@@ -56,6 +56,8 @@ function addCir(){
 function startGame(){
 	let game = document.getElementById('game');
 	game.style.display = 'block';
+	let open = document.getElementById('button-0');
+	open.style.display = 'none';
 	let start = document.getElementById('button-1');
 	start.style.display = 'block';
 }
@@ -118,7 +120,7 @@ function fail(){
 	endGame();
 	let fin = document.getElementById('fin');
 	fin.style.display = 'block';
-	fin.innerHTML = 'fail';
+	fin.innerHTML = '<p id="fail">fail</p><input type="button" value="RESTART" id="button-2" onclick="restart();">';
 	f = true;
 }
 
@@ -126,7 +128,7 @@ function success(){
 	endGame();
 	let fin = document.getElementById('fin');
 	fin.style.display = 'block';
-	fin.innerHTML = 'success';
+	fin.innerHTML = '<p id="success">success</p>';
 }
 
 function endGame(){
@@ -160,6 +162,23 @@ function drawFrame() {
 	}
 	// Рисуем следующий кадр через 20 миллисекунд
 	setTimeout("drawFrame()", 20);
-	
-	
+}
+
+function restart(){
+	canvas=document.getElementById('game');
+	context=canvas.getContext('2d');
+	context.fillStyle='#eeeeee';
+	context.fillRect(0,0,800,600);
+
+	squarePosition_x = 0;
+	squarePosition_y = 300;
+	f = false;
+
+	circles = [];
+	x = 80;
+
+	let game = document.getElementById('game');
+	game.style.display = 'block';
+	let fin = document.getElementById('fin');
+	fin.style.display = 'none';
 }
