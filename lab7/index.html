@@ -8,8 +8,9 @@
     
 </head>
 <body>
-    <canvas id="game" width="800" height="600"></canvas>
-    <script src="./script.js"></script>
-    <input type="button" value="START" id="button-1" onclick="drawFrame();">
+    <canvas id="game" width="800" height="600" style="display: none;"></canvas>
+    <input type="button" value="START" id="button-1" onclick="drawFrame();" style="display: none;">
+    <p id="fin" style="display: none;">Game over</p>
+    <script src="./script.js" onload="startGame()"></script>
 </body>
 </html>
