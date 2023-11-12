@@ -1,0 +1,51 @@
+#game {
+    display: none;
+}
+
+div {
+    position: relative;
+}
+
+#button-0, #button-2{
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: aquamarine;
+}
+
+#button-0:hover, #button-2:hover {
+    background-color: aqua;
+}
+
+#button-1 {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 500px;
+    height: 500px;
+    font-size: 25px;
+    background-color: aquamarine;
+}
+
+#button-1:hover {
+    background-color: aqua;
+}
+
+#fin {
+    display: none;
+    width: 800px;
+    height: 500px;
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#fail {
+    color: red;
+}
+
+#success {
+    color: green;
+}
